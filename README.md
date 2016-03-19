@@ -18,7 +18,7 @@ In this lesson we will learn how to use HTML form elements to gather user input.
 
 ### Forms
 
-Forms are essential for gathering user information from site visitors. Text can inserted, slections made and a record of their responses can be sent remoetly to a server whose backend can store the information. At this time we will not be going into detail about the back-end portion of a form submission, but instead focusing on the front-end portion. Let's explore some of the many form elements we have at our disposal for gathering user input.
+Forms are essential for gathering user information from site visitors. Text can be inserted, selections can be made and a record of their responses can be sent remotely to a server whose backend can store the information. At this time we will not be going into detail about the back-end portion of a form submission, but instead focusing on the front-end portion. Let's explore some of the many form elements we have at our disposal for gathering user input.
 
 We will start with the crucial parent element `<form>`. The form element wraps all the input elements that will collect our user information inside of it. The form element has two important attributes: action, and method. The `action` attribute will specify where the user information is sent to. This is typically the URL of a remote server. The second attribute is the `method` which will dictate the manner in which we submit our information. The most common HTTP methods are `GET`, `POST`, `PATCH`, `PUT`, and `DELETE` but for now we will focus on the most common two for form submissions `GET` and `POST`.
 
@@ -32,9 +32,9 @@ Below we see the form example code for making a GET request.
   <input type="password" name="password">
   <input type="submit" value="submit">
 </form>
-``` 
+```
 
-When the user clicks the submit button of our form all their responses are captured and labled using the name attributes on each element. Then they are sent to the location listed in the action attribute in our case `process-user.php` The request uses the method attribute set as `get`. This causes the information to be sent as a Query String includded into the URL. The URL for our GET request looks like this,
+When the user clicks the submit button of our form all their responses are captured and labeled using the name attributes on each element. Then they are sent to the location listed in the action attribute in our case `process-user.php` The request uses the method attribute set as `get`. This causes the information to be sent as a Query String included into the URL. The URL for our GET request looks like this,
 
 ![HTTP Get URL](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/http-get-url.png)
 
@@ -54,8 +54,8 @@ Below we see the same form example code for making a POST request.
   <input type="password" name="password">
   <input type="submit" value="submit">
 </form>
-``` 
-When the user clicks the submit button of our form all their responses are captured and labled using the name attributes on each element. Then they are sent to the location listed in the action attribute in our case `process-user.php` The request uses the method attribute set as `post`. This causes the information to be sent as Form Data that is passed along to our process-user.php file. The URL for our post request looks like this,
+```
+When the user clicks the submit button of our form all their responses are captured and labeled using the name attributes on each element. Then they are sent to the location listed in the action attribute in our case `process-user.php` The request uses the method attribute set as `post`. This causes the information to be sent as Form Data that is passed along to our process-user.php file. The URL for our post request looks like this,
 
 ![HTTP Post URL](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/http-post-url.png)
 
@@ -113,17 +113,17 @@ Setting the input element with a `type="submit"` will create a submission button
 
 #### Radio Inputs
 
-Radio inputs are useful when you want to have several possible values but wish to limit the user to choosing one or another. To accomplish this we must set different `value` attributes for each radio button, but they must share the same `name` attribute. 
+Radio inputs are useful when you want to have several possible values but wish to limit the user to choosing one or another. To accomplish this we must set different `value` attributes for each radio button, but they must share the same `name` attribute.
 
 ```html
 <input type="radio" name="gender" value="male"> Male <br>
 <input type="radio" name="gender" value="female"> Female
 ```
 
-<input type="radio" name="gender" value="male"> Male 
+<input type="radio" name="gender" value="male"> Male
 <input type="radio" name="gender" value="female"> Female
 
-#### Checkboxes 
+#### Checkboxes
 
 Checkboxes are ideal if we wish to allow our user to choose one, another, or both values.
 
@@ -132,7 +132,7 @@ Checkboxes are ideal if we wish to allow our user to choose one, another, or bot
 <input type="checkbox" name="vehicle-2" value="car"> Car
 ```
 
-<input type="checkbox" name="vehicle-1" value="bike"> Bike 
+<input type="checkbox" name="vehicle-1" value="bike"> Bike
 <input type="checkbox" name="vehicle-2" value="car"> Car
 
 #### Select Menus
